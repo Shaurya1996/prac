@@ -2,7 +2,6 @@
     int main()
     {
         int n;
-        unsigned long long factorial = 1;
         printf("Enter an integer: ");
         scanf("%d",&n);
         // show error if the user enters a negative integer
@@ -11,6 +10,8 @@
         else
         {
             int i;
+            unsigned long long factorial = 1;
+
             for(i=1; i<=n; ++i)
             {
                 factorial *= i;              // factorial = factorial*i;
